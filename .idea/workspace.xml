@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="449d516c-91ad-481d-af92-5899bf7ecb3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/home-hero.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/top-nav.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ui/fonts.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/posters/lift-poster.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/posters/mission.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/posters/witcher.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/nav-link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/home-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home-hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/top-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/top-nav.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699622457703</updated>
-      <workItem from="1699622458704" duration="7180000" />
+      <workItem from="1699622458704" duration="8371000" />
     </task>
     <servers />
   </component>

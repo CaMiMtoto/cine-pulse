@@ -1,6 +1,7 @@
 "use client"
 import {FaBeer} from 'react-icons/fa';
 import {useEffect, useState} from "react";
+import NavLink from "@/app/components/nav-link";
 
 export default function TopNav() {
     const [open, setOpen] = useState(true);
@@ -23,10 +24,10 @@ export default function TopNav() {
             <div
                 className="flex gap-8 flex-col lg:flex-row self-start justify-between w-full  transition-all">
                 <ul className="flex flex-col lg:flex-row gap-8 items-center">
-                    <li><a className="text-lg font-normal tracking-wide leading-loose" href="">Home</a></li>
-                    <li><a className="text-lg font-normal tracking-wide leading-loose" href="">TV Shows</a></li>
-                    <li><a className="text-lg font-normal tracking-wide leading-loose" href="">Movies</a></li>
-                    <li><a className="text-lg font-normal tracking-wide leading-loose" href="">Recently Added</a></li>
+                    <li><NavLink href="/">Home</NavLink></li>
+                    <li><NavLink href="/">TV Shows</NavLink></li>
+                    <li><NavLink href="/">Movies</NavLink></li>
+                    <li><NavLink href="/">Recently Added</NavLink></li>
                 </ul>
                 <ul className="flex   flex-col lg:flex-row gap-8 items-center">
                     <li>

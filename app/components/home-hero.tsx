@@ -5,7 +5,7 @@ export function HomeHero() {
     return (
         <section className="bg-cover h-screen bg-no-repeat justify-center  w-full"
                  style={{
-                     backgroundImage: 'linear-gradient(to bottom, rgba(6, 48, 58, 0.6), rgba(7, 61, 73, 0.3), rgba(14, 82, 98, 0.8)), url("/posters/mission.jpg")',
+                     backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(14, 82, 98, 0.8)), url("/posters/mission.jpg")',
                      backgroundPosition: 'top',
                  }}
         >
@@ -24,15 +24,15 @@ export function HomeHero() {
                     <div className="flex gap-3 text-lg font-semibold my-2">
                         <span>Crime</span>
                         {/*separator*/}
-                        <span className="text-primary">•</span>
+                        <span className="text-primary-dark">•</span>
                         <span>Thriller</span>
                         {/*separator*/}
-                        <span className="text-primary">•</span>
+                        <span className="text-primary-dark">•</span>
                         <span>Mystery</span>
                     </div>
-                    <div className="flex  gap-8 my-6">
+                    <div className="flex gap-3 my-6">
                         <button
-                            className="inline-flex gap-2 justify-center text-sm xl:text-lg items-center bg-primary px-8 lg:px-10 py-4 font-semibold  tracking-wider rounded-sm hover:bg-primary-dark">
+                            className="inline-flex gap-2 justify-center text-sm xl:text-lg items-center bg-primary px-8 lg:px-10 py-4 font-semibold  tracking-wider hover:bg-primary-light">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                  className="icon icon-tabler icon-tabler-player-play-filled" width="24" height="24"
                                  viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none"
@@ -45,7 +45,7 @@ export function HomeHero() {
                             Play
                         </button>
                         <button
-                            className="inline-flex gap-2  justify-center text-sm xl:text-lg items-center bg-primary/30 text-primary-dark hover:text-white px-8 lg:px-10 py-4 font-semibold  tracking-wider  rounded-sm hover:bg-primary-dark">
+                            className="inline-flex gap-2  justify-center text-sm xl:text-lg items-center bg-primary-dark hover:bg-primary-light hover:text-white px-8 lg:px-10 py-4 font-semibold  tracking-wider">
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-plus"
                                  width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"
                                  fill="none" strokeLinecap="round" strokeLinejoin="round">
