@@ -2,6 +2,7 @@
 import {FaBeer} from 'react-icons/fa';
 import {useEffect, useState} from "react";
 import NavLink from "@/app/components/nav-link";
+import Image from "next/image";
 
 export default function TopNav() {
     const [open, setOpen] = useState(true);
@@ -18,20 +19,34 @@ export default function TopNav() {
     );
 
     return <nav
-        className="relative  px-24 py-10   transition-all ease-in-out">
+        className="relative px-24 py-10   transition-all ease-in-out">
+
         {
             open &&
             <div
                 className="flex gap-8 flex-col lg:flex-row self-start justify-between w-full  transition-all">
                 <ul className="flex flex-col lg:flex-row gap-8 items-center">
-                    <li><NavLink href="/">Home</NavLink></li>
+                    <li>
+                        <NavLink href="/">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-device-tv"
+                                 width="48"
+                                 height="48" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none"
+                                 strokeLinecap="round"
+                                 strokeLinejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+                                <path d="M16 3l-4 4l-4 -4"></path>
+                            </svg>
+                        </NavLink>
+                    </li>
                     <li><NavLink href="/">TV Shows</NavLink></li>
                     <li><NavLink href="/">Movies</NavLink></li>
                     <li><NavLink href="/">Recently Added</NavLink></li>
                 </ul>
                 <ul className="flex   flex-col lg:flex-row gap-8 items-center">
                     <li>
-                        <a className="text-lg font-normal tracking-wide leading-loose" href="">
+                        <NavLink href={'/'}>
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-search"
                                  width="24"
                                  height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none"
@@ -40,10 +55,10 @@ export default function TopNav() {
                                 <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
                                 <path d="M21 21l-6 -6"></path>
                             </svg>
-                        </a>
+                        </NavLink>
                     </li>
                     <li>
-                        <a className="text-lg font-normal tracking-wide leading-loose" href="">
+                        <NavLink href={'/'}>
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-bell-filled"
                                  width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"
                                  fill="none"
@@ -56,17 +71,17 @@ export default function TopNav() {
                                     d="M12 2c1.358 0 2.506 .903 2.875 2.141l.046 .171l.008 .043a8.013 8.013 0 0 1 4.024 6.069l.028 .287l.019 .289v2.931l.021 .136a3 3 0 0 0 1.143 1.847l.167 .117l.162 .099c.86 .487 .56 1.766 -.377 1.864l-.116 .006h-16c-1.028 0 -1.387 -1.364 -.493 -1.87a3 3 0 0 0 1.472 -2.063l.021 -.143l.001 -2.97a8 8 0 0 1 3.821 -6.454l.248 -.146l.01 -.043a3.003 3.003 0 0 1 2.562 -2.29l.182 -.017l.176 -.004z"
                                     strokeWidth="0" fill="currentColor"></path>
                             </svg>
-                        </a>
+                        </NavLink>
                     </li>
                     <li>
-                        <a className="text-lg font-normal tracking-wide leading-loose" href="">
+                        <NavLink href={'/'}>
                             My List
-                        </a>
+                        </NavLink>
                     </li>
                 </ul>
             </div>
         }
-        <button className="block lg:hidden absolute right-8 top-8 border p-3 transition-all ease-in-out"
+        <button className="block lg:hidden absolute right-8 top-8 p-3 transition-all ease-in-out text-white"
                 onClick={toggle}>
             {
                 open &&
